@@ -1,8 +1,8 @@
 /*
 Variable - A container which can hold the value
-1. var - older approach
-2. let - commonly used
-3. const - can hold immutable value
+1. var - older approach - Local & Global scope
+2. let - commonly used - Local & Gloabal scope
+3. const - can hold immutable value - Local & Globale scope
 */
 
 console.log("------------ var technique -----------");
@@ -30,10 +30,10 @@ function myFuntion(){
 }
 myFuntion();
 
-console.log(str4);
+//console.log(str4);
 
 if(2 == 2){
-console.log("Inside the block");
+    console.log("Inside the block");
     
     console.log(str1);
     console.log(str2);
@@ -49,5 +49,9 @@ console.log(myValue);
 let checkValue = 33;
 console.log(checkValue);
 
-let checkValue = 55;
+//let checkValue = 55;
+checkValue = 77;
 console.log(checkValue);
+
+const pi = 3.142;
+//pi = 99.9;
