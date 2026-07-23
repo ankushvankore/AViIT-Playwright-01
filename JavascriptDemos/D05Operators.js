@@ -89,3 +89,29 @@ console.log(true + 1);  //2
 console.log(" " + 10);  // 10
 console.log(undefined + 100);   //NaN   
 console.log(true + true);       //2
+
+console.log("--------------- Logial Operators --------------");
+/*
+c1          c2            && (AND)    || (OR)     ! (NOT)
+true(1)     true(1)         true
+ture(1)     false(0)        false
+false(0)    true(1)         false
+false(0)    false(0)        false
+*/
+
+let isOnRole = true;
+let age = 30;
+
+console.log("------------- && (and) Operator ------------");
+
+console.log(isOnRole == true && age >= 30);
+console.log(isOnRole == true && age > 30);
+console.log(isOnRole == false && age >= 30);
+console.log(isOnRole == false && age >= 50);
+
+console.log("------------- || (OR) Operator ------------");
+
+console.log(isOnRole == true || age >= 30); //true
+console.log(isOnRole == true || age > 30);  //ture
+console.log(isOnRole == false || age >= 30);//true
+console.log(isOnRole == false || age >= 50);//false
