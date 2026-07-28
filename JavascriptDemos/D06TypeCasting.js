@@ -3,7 +3,7 @@ Type Casting / Type Coercion
     Technique to convert any data type to another data type
 
 Types
-    1. Implicit Casting
+    1. Implicit Casting / Type Coercion
         Conversion will be done automatically by JS itself
     2. Explicit Casting - forcefully casting
         can be done using 
@@ -112,4 +112,4 @@ console.log(Boolean(null));
 
 
 console.log(Boolean("Amita"));
-
+console.log(Boolean(-8));
