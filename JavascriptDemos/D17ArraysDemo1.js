@@ -16,7 +16,7 @@ int number ie. INDEX
 
 console.log("---------------- Empty Array ----------------");
 let arr = [];
-console.log(typeof arr);
+console.log(typeof arr);    //Object
 console.log(arr);
 console.log("Elements in array: " + arr.length);
 
@@ -33,9 +33,11 @@ console.log("City: " + empData[2]);
 console.log(empData[8]);
 
 console.log("-------------- Array Constructor -------------------");
-let cities = new Array["Kolhapur", "Pune", "Jaipur", "Delhi", "Puri", "Kolkatta"];
+let cities = new Array("Kolhapur", "Pune", "Jaipur", "Delhi", "Puri", "Kolkatta");
 console.log("Size: " + cities.length);
 console.log(cities[3]);
+console.log(cities);
+
 
 console.log("------------ Array of numbers ------------------");
 let arr1 = new Array(11, 22, 33, 44, 55);
@@ -51,4 +53,5 @@ console.log("----------------------- Array Declaration with Array.of() ---------
 let arr3 = Array.of(1, 2, 3, 4, 5, 4)
 console.log("Size: " + arr3.length);
 console.log(arr3);
+
 

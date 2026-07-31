@@ -5,8 +5,8 @@ JS supports 5 types of loops
 1. for
 2. while
 3. do-while
-4. for-of used in arrays or objecy=ts
-5. for-in used in arrays or objecy=ts
+4. for-of used in arrays or objects
+5. for-in used in arrays or objects
 */
 
 /*
@@ -36,7 +36,7 @@ for(let i = 1; i <= 10; i += 2){
 console.log("------------- print 1 to 10 Even number --------------");
 for(let i = 1; i <= 10; i++){
     if(i %2 === 0){
-        console.log(i);
+        console.log(i);n
         
     }
 }
