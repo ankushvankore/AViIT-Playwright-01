@@ -39,7 +39,7 @@ console.log(fruits);
 //[ 'Apple', 'Gawa', 'Jackfruit', 'Kiwi' ]
 //   -4        -3      -2           -1
 
-console.log("------------- Remove last 2 element --------------");
+console.log("------------- Remove 2 element --------------");
 
 fruits.splice(-3, 2);
 console.log(fruits);
