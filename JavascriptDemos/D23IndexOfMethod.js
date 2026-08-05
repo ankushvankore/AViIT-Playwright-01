@@ -1,6 +1,7 @@
 /*
 indexOf() from array will return the index of any element from array
-Returns the index of the first occurrence of a value in an array, or -1 if it is not present.
+Returns the index of the first occurrence of a value in an array, 
+or -1 if it is not present.
 */
 
 let days = ['Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'];
@@ -8,7 +9,7 @@ let index = days.indexOf('Thr');
 console.log("Index of 'Thr': " + index);
 
 let index2 = days.indexOf("Friday");
-console.log("Index of 'Friday': " + index2);
+console.log("Index of 'Friday': " + index2);    //-1 
 
 console.log("---------------------------------------------");
 

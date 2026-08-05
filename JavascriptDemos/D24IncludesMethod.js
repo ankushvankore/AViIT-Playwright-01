@@ -8,3 +8,10 @@ let noPresent = number.includes(33);
 console.log("33 Present: " + noPresent);
 
 console.log("99 Present: " + number.includes(99));
+
+if(number.includes(88)){
+    console.log("Index: " + number.indexOf(88));    
+}
+else{
+    console.log("Not present");    
+}

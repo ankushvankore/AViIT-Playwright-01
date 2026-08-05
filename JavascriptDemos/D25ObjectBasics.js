@@ -9,7 +9,7 @@ Ways to create object
 4. Prototype based object
 */
 console.log("-------------- Object Literal ------------------");
-let person = {};    //This will create your object
+let person = {};    //This will create your object - this time this is empty object
 console.log(person);
 console.log("Type: " + typeof person);
 
@@ -21,7 +21,7 @@ let user = {
 };
 
 console.log(user);
-console.log("Type: " + typeof user);
+console.log("Type: " + typeof user);        //object
 
 console.log("------------------ Accessing Elements ---------------");
 /*
@@ -38,6 +38,7 @@ console.log("Is user present: " + user.isPresent);  //undefined
 
 
 console.log("-------------- Modify the Object ----------------");
+user.age = 31;
 user.isPresent = true;
 user.city = "Kolkata";
 
