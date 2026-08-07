@@ -13,7 +13,7 @@ let test1 = function displayData(browser, version){
 }
 
 //displayData("Chrome", 138);       ReferenceError: displayData is not defined
-//test1("Firefox", 140);
+test1("Firefox", 140);
 console.log("Type: " + typeof test1);
 
 /**

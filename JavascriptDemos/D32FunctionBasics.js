@@ -33,7 +33,7 @@ console.log("---------------- Simple function without any argument -----------")
 
 //Function body
 function sayHello(){
-    console.log("Hello friends, Welcome to JS function topoc!!!");
+    console.log("Hello friends, Welcome to JS function topic!!!");
     console.log("This is the function where I am not passing any argument..");        
 }
 
