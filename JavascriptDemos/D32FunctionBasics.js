@@ -2,8 +2,9 @@
 Function: Is a block of statements that can be executed for multiple times.
 Advantages:
 1. Easy for maintance
-2. Resusibligy
+2. Resusiblity
 3. Modulirity
+4. Avoids repeating the code
 
 Types of Functions:
 1. Built-in-functions - log(), split(), splice(), push()
@@ -23,10 +24,11 @@ Syntax for fun Decl
 function name(arguments){
     body of function;
 }
+//Arguments / Parameters - The value/s those are passed to the function for procession
 */
 
 console.log("------------------ Function Decleration ---------------");
-//Arguments / Parameters - The value/s those are passed to the function for procession
+
 console.log("---------------- Simple function without any argument -----------");
 
 //Function body
@@ -39,12 +41,14 @@ function sayHello(){
 sayHello();
 
 console.log("------------------- Function with Arguments -----------------");
-function calculateAreaOfCircle(redius){
-    area = 3.142 * redius * redius;
+function calculateAreaOfCircle(radius){
+    area = 3.142 * radius * radius;
     console.log("Area of Circle: " + area);    
 }
 
 calculateAreaOfCircle(5);
+let rd = 4;
+calculateAreaOfCircle(rd);
 
 function calculateAddition(n1, n2){
     sum = n1 + n2;
@@ -54,6 +58,7 @@ function calculateAddition(n1, n2){
 
 calculateAddition(8, 7);
 calculateAddition(90);
+calculateAddition("10", "Hi");
 
 //This way you can inform the user about type of argument
 //This is called as JSDoc (Javascript Documentation)
@@ -82,6 +87,8 @@ function calculateMultiplication(n1, n2){
     //return ans;
 
     return n1 * n2;
+    //console.log("Function ends!!!");
+    
 }
 /*
 return statement will
@@ -143,3 +150,22 @@ function launchBrowser(bName){
 if(launchBrowser("ChroME")){
     console.log("Enter url: ");
 }
+
+console.log("-------------------- Multiple Return Statement -------------");
+
+/**
+ * 
+ * @param {number} n1 
+ * @param {number} n2 
+ */
+
+function findMax(n1, n2) {
+    if(n1 > n2){
+        return n1;
+    }
+    else{
+        return n2;
+    }
+}
+
+console.log("Max No: " + findMax(9, 60));
