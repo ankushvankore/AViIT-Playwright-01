@@ -13,13 +13,16 @@ let sqArray = numbers.map((no)=>{
 })
 console.log(sqArray);
 
+let doubleArray = numbers.map(no => no * 2);
+console.log(doubleArray);
+
+
 //Single line execution
 
 let cubeArray = numbers.map(no => (no * no * no));
 console.log(cubeArray);
 
 console.log("----------------- filter() ---------------");
-
 
 let footerLinks = ['Advt Google', 'Google How search works', 'Google Business', 'Privacy', 'Google Tearms', 'Settings'];
 

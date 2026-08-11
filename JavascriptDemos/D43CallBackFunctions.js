@@ -9,8 +9,14 @@ function getName(uName) {
     console.log("Welcome to Javascript, " + uName);
 }
 
-function sayHello(fun, uName) {
-    fun(uName);
+/**
+ * 
+ * @param {function} callBackFun 
+ * @param {*} uName 
+ */
+
+function sayHello(callBackFun, uName) {
+    callBackFun(uName);
 }
 
 sayHello(getName, "Vibhavari");
