@@ -3,7 +3,7 @@ static Keyword
 static keyword can apply to any variable or method
 anything declared as static, means it is common for all the objects
 
-for static members only single copy created per class
+for static members only single copy created per class, all objects will share the same copy
 where as for non static members (Instance members) copy created per object
 
 only static properties or methods can be called by classname

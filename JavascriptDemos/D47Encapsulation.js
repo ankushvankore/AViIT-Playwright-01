@@ -21,10 +21,12 @@ class User{
         this.uName = nm;
     }
 
+    //Setter method - Mutator method -> used to set the value of any data member
     setPassword(p){
         this.#password = p;
     }
 
+    //Getter methid - Accessor method -> used to access any private data member of class
     getPassword(){
         return this.#password;
     }
@@ -32,7 +34,6 @@ class User{
     displayUser(){
         console.log("User ID  : " + this.uId);
         console.log("User Name: " + this.uName);
-
     }
 }
 

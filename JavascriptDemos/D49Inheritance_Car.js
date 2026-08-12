@@ -1,6 +1,6 @@
 import { Vehicle } from "./D48InheritanceDemo.js";
 
-class Car extends Vehicle{
+export class Car extends Vehicle{
     start(){
         console.log("Car can start...");
     }
@@ -14,7 +14,7 @@ class Car extends Vehicle{
     }
 }
 
-let v1 = new Vehicle();
+/*let v1 = new Vehicle();
 v1.applyBreak();
 //v1.start();     //TypeError: v1.start is not a function
 
@@ -23,3 +23,4 @@ c1.applyBreak();
 c1.start();
 c1.refuel();
 c1.stop();
+*/
