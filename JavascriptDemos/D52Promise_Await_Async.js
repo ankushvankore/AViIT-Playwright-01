@@ -23,7 +23,7 @@ async function getData(){
     let response = await fetch("https://api.restful-api.dev/collections");
     console.log(response);
 }
-//getData();
+getData();
 
 let fileData = async ()=>{
     let data = await readFile("D:/AViIT/Demos/Playwright_Batches/Playwright-01/JavascriptDemos/Demo.txt", "utf8");
