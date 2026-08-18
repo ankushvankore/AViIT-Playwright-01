@@ -1,4 +1,4 @@
-import {chromium, test} from "@playwright/test"
+import {chromium, test, webkit} from "@playwright/test"
 
 test("Test on MS Edge", async({})=>{
     let browser = await chromium.launch({headless:false, channel:'msedge'})
