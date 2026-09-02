@@ -25,8 +25,7 @@ test("Handling select based dropdown list", async({page})=>{
     console.log("Total Options in dropdown list: " + allOptions.length);
     
     for(let a of allOptions)
-        console.log(await a.innerText());
-        
+        console.log(await a.innerText());        
 
     await page.waitForTimeout(2000);
 })
