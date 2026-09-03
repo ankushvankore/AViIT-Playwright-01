@@ -20,6 +20,9 @@ test("Handling select based dropdown list", async({page})=>{
     //Select by index (zero based)
     await drpList.selectOption({index: 1});
     //console.log("Selected Option: " + await drpList.inputValue());
+    let selectedOption = await drpList.locator('option:checked').textContent();
+    console.log("Selected Option: " + selectedOption);
+    
 
     let allOptions = await page.locator("#drop1>option").all();
     console.log("Total Options in dropdown list: " + allOptions.length);
