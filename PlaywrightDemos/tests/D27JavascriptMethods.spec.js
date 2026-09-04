@@ -4,6 +4,7 @@ test("Refresh the page", async({page})=>{
     await page.goto("https://demoqa.com/automation-practice-form");
 
     //await page.reload();
+    //page.evaluate() is used to execute any JS method
     await page.evaluate(()=>{
         window.history.go(0);   //Will reload the page
     })
@@ -25,7 +26,7 @@ test("Get the title of the page", async({page})=>{
     await page.waitForTimeout(2000);
 })
 
-test.only("Handlinh WebElements through JavaScript", async({page})=>{
+test.only("Handling WebElements through JavaScript", async({page})=>{
     await page.goto("https://demoqa.com/automation-practice-form");
 
     //querySelector()  accepts only CssSelector
