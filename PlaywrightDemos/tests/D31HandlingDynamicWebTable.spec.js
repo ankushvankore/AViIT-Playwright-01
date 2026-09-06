@@ -1,6 +1,6 @@
 import test from "@playwright/test"
 
-test("Handling Static WebTable", async({page})=>{
+test("Handling Dynamic WebTable", async({page})=>{
     await page.goto("https://testautomationpractice.blogspot.com/?m=1");
     
     await page.getByText("Dynamic Web Table").scrollIntoViewIfNeeded();
@@ -13,20 +13,48 @@ test("Handling Static WebTable", async({page})=>{
     }
 
     console.log("------------ Display data of Chrome Row--------------");
-    let cIndex = 1;
+    let rIndex = 1;
     let allNameCol = await page.locator("//tbody[@id='rows']//tr//td[1]").allInnerTexts();
     for(let n of allNameCol){
         if(n.includes('Chrome')){
             break;
         }
-        cIndex++;
+        rIndex++;
     }
     //console.log(cIndex);
     
-    let chromeRow = await page.locator("//tbody[@id='rows']//tr["+cIndex+"]//td").allInnerTexts();
+    let chromeRow = await page.locator("//tbody[@id='rows']//tr["+rIndex+"]//td").allInnerTexts();
     for(let c of chromeRow){
         console.log(c);        
     }   
 
-    await page.waitForTimeout(2000);
+    console.log("------------- Display data of CPU Column ----------------");
+    //let cIndex = allHeaders.indexOf("CPU (%)") + 1; 
+    let cIndex = 1;
+    for(let c of allHeaders){
+        if(c.includes("CPU (%)")){
+            break;
+        }
+        cIndex++;
+    }
+    console.log("Column Index: " + cIndex);
+    let column = await page.locator("//tbody[@id='rows']//tr//td["+cIndex+"]").allInnerTexts();
+    for(let c of column)
+        console.log(c);
+
+
+    let actCpuForChrome = await page.locator("//tbody[@id='rows']//tr["+rIndex+"]//td["+cIndex+"]").innerText();
+    let expCpuForChrome = await page.locator("(//div[@id='displayValues']//p//strong)[1]").innerText();
+    console.log("Actual Value: " + actCpuForChrome);
+    console.log("Expected Value: " + expCpuForChrome);
+    
+    if(actCpuForChrome.includes(expCpuForChrome)){
+        console.log("Both values are matching!!! Test case pass");
+    }
+    else{
+        console.log("Both values are not matching!!! Test case fail");
+        
+    }
+
+    await page.waitForTimeout(5000);
 })
