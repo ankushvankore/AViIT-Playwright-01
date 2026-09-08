@@ -16,12 +16,12 @@ test("Handling Dynamic WebTable", async({page})=>{
     let rIndex = 1;
     let allNameCol = await page.locator("//tbody[@id='rows']//tr//td[1]").allInnerTexts();
     for(let n of allNameCol){
-        if(n.includes('Chrome')){
+        if(n.includes('Firefox')){
             break;
         }
         rIndex++;
     }
-    //console.log(cIndex);
+    console.log("Row Index: " + rIndex);
     
     let chromeRow = await page.locator("//tbody[@id='rows']//tr["+rIndex+"]//td").allInnerTexts();
     for(let c of chromeRow){
@@ -32,7 +32,7 @@ test("Handling Dynamic WebTable", async({page})=>{
     //let cIndex = allHeaders.indexOf("CPU (%)") + 1; 
     let cIndex = 1;
     for(let c of allHeaders){
-        if(c.includes("CPU (%)")){
+        if(c.includes("Memory")){
             break;
         }
         cIndex++;
