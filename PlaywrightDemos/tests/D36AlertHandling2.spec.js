@@ -74,7 +74,7 @@ test.only("Handling all type of alerts in Playwright", async({page})=>{
 
     await page.getByText("Click for JS Alert").click();
     let message = await page.locator("#result").innerText();
-    expect(message).toContain("You successfully clicked an alert");
+    expect(message).toConxain("You successfully clicked an alert");
 
     await page.getByText("Click for JS Confirm").click();
     message = await page.locator("#result").innerText();
