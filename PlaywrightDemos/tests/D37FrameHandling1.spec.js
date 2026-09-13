@@ -12,18 +12,17 @@ test("Frame automation", async({page})=>{
     await page.goto("https://ui.vision/demo/webtest/frames/");
 
     let frame1 = page.frameLocator("//frame[@src='frame_1.html']");
-    await frame1.locator("//input[@name='mytext1']").fill("Test");
+    await frame1.locator("//input[@name='mytext1']").fill("This is Frame 1");
 
-    await page.frameLocator("//frame[@src='frame_2.html']").locator("//input[@name='mytext2']").fill("Frame2");
+    await page.frameLocator("//frame[@src='frame_2.html']").locator("//input[@name='mytext2']").pressSequentially("This is second frame!!!", {delay: 100})
 
-    let frame2 = await page.frameLocator("//frame[@src='frame_3.html']");
-    frame2.locator("//input[@name='mytext3']").fill("Frame 3");
+    let frame3 = page.frameLocator("//frame[@src='frame_3.html']");
+    frame3.locator("//input[@name='mytext3']").fill("Welcome to Playwright Frame Handling");
 
-    let nestedFrame = await frame2.frameLocator("//iframe[contains(@src, 'https://docs.google.com/')]");
+    let nestedFrame = frame3.frameLocator("//iframe[contains(@src, 'https://docs.google.com/')]");
     await nestedFrame.locator("#i9").click();
 
     await nestedFrame.locator("#i21").click();    
 
     await page.waitForTimeout(5000);
 })
-//11-1.10
