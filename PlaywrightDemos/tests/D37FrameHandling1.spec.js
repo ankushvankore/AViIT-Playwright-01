@@ -26,3 +26,13 @@ test("Frame automation", async({page})=>{
 
     await page.waitForTimeout(5000);
 })
+
+test.only("Handling frame", async({page})=>{
+    await page.goto("https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_input_disabled");
+
+    let f1 = page.frameLocator("#iframeResult");
+    await f1.locator("#fname").pressSequentially("Playwright!!!", {delay: 100});
+
+
+    await page.waitForTimeout(3000);
+})

@@ -1,0 +1,234 @@
+# JAVASCRIPT OBJECTS – ASSIGNMENTS
+
+# LEVEL 1 – BASIC OBJECT OPERATIONS
+
+1. CREATE AND DISPLAY AN OBJECT
+
+Create an object representing a student with the following properties:
+
+* name
+* age
+* course
+* city
+
+Display the complete object.
+
+2. ACCESS OBJECT PROPERTIES
+
+Create a car object with the following properties:
+
+* brand
+* model
+* year
+* price
+
+Print each property using dot notation.
+
+3. BRACKET NOTATION
+
+Create a student object and access its properties using bracket notation.
+
+4. UPDATE A PROPERTY
+
+Create an employee object.
+
+Change the employee's salary and display the updated object.
+
+5. ADD A NEW PROPERTY
+
+Create a person object with name and age.
+
+Add the following properties:
+
+* city
+* profession
+
+6. DELETE A PROPERTY
+
+Create a product object containing:
+
+* name
+* price
+* brand
+* category
+
+Delete the category property.
+
+# LEVEL 2 – OBJECT PROPERTIES AND METHODS
+
+7. CHECK PROPERTY EXISTENCE
+
+Create a student object and check whether the property "email"
+exists using the "in" operator.
+
+8. USING hasOwnProperty()
+
+Create an employee object and check whether it contains a
+"salary" property using hasOwnProperty().
+
+9. OBJECT PROPERTY COUNT
+
+Create an object containing 5 properties.
+
+Find the number of properties using Object.keys().
+
+10. OBJECT KEYS
+
+Create a car object and print all its property names
+using Object.keys().
+
+11. OBJECT VALUES
+
+Create a student object and print all property values
+using Object.values().
+
+12. OBJECT ENTRIES
+
+Create an employee object and print all key-value pairs
+using Object.entries().
+
+13. CREATE AN OBJECT METHOD
+
+Create a person object with name and age.
+
+Add a method called greet() that prints:
+
+Hello, my name is John
+
+14. CALCULATE USING OBJECT METHODS
+
+Create a calculator object with the following methods:
+
+* add()
+* subtract()
+* multiply()
+* divide()
+
+Test all four methods.
+
+# LEVEL 3 – NESTED OBJECTS
+
+15. CREATE A NESTED OBJECT
+
+Create a student object containing:
+
+* name
+* age
+* address
+
+The address should contain:
+
+* city
+* state
+* pincode
+
+16. ACCESS NESTED PROPERTIES
+
+Create a company object containing an employee object.
+
+Access the employee's name and salary.
+
+17. UPDATE NESTED PROPERTY
+
+Create a student object with a nested address object.
+
+Change the city from "Mumbai" to "Pune".
+
+18. NESTED OBJECT WITH MULTIPLE LEVELS
+
+Create the following structure:
+
+company
+|
+department
+|
+manager
+|
+name
+
+Access the manager's name.
+
+19. NESTED OBJECT METHOD
+
+Create a user object containing an address object.
+
+Create a method called displayAddress() that prints
+the complete address.
+
+20. REAL-WORLD PRODUCT OBJECT
+
+Create a product object containing:
+
+* name
+* price
+* brand
+* category
+* specifications
+
+Make specifications a nested object containing:
+
+* color
+* weight
+* warranty
+
+# LEVEL 4 – OBJECTS AND ARRAYS
+
+21. ARRAY OF OBJECTS
+
+Create an array containing 5 student objects.
+
+Each student should have:
+
+* name
+* age
+* marks
+
+22. DISPLAY STUDENT DETAILS
+
+Using a for loop, print the name and marks of every student
+from an array of objects.
+
+23. FIND A STUDENT
+
+Given an array of student objects, find the student
+whose name is "Rahul".
+
+24. EMPLOYEE RECORDS
+
+Create an array containing 5 employee objects.
+
+Each employee should have:
+
+* id
+* name
+* department
+* salary
+
+Display all employees using a loop.
+
+25. FIND HIGHEST SALARY
+
+Given an array of employee objects, find the employee
+with the highest salary.
+
+26. FIND LOWEST SALARY
+
+Given an array of employee objects, find the employee
+with the lowest salary.
+
+27. PRODUCT INVENTORY
+
+Create an array of product objects containing:
+
+* product name
+* price
+* quantity
+
+Calculate the total inventory value.
+
+# END OF LEVEL 4
+
+Note:
+These assignments are designed to provide practice with
+JavaScript Objects from basic concepts to objects combined
+with arrays.

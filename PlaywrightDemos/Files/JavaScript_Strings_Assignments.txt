@@ -1,0 +1,175 @@
+JAVASCRIPT STRINGS – ASSIGNMENTS
+
+Level 1 – Basic String Operations
+
+1. Create a string "JavaScript is easy to learn" and:
+   - Print its length.
+   - Convert it to uppercase.
+   - Convert it to lowercase.
+
+2. Given:
+   let str = "Welcome to JavaScript";
+   Print the first character and the last character.
+
+3. Find the position of the word "JavaScript" in:
+   let str = "I am learning JavaScript";
+
+4. Given:
+   let str = "Automation Testing";
+   Check whether the string contains "Testing".
+
+5. Remove leading and trailing spaces from:
+   let str = "   JavaScript Automation   ";
+
+
+Level 2 – String Methods
+
+6. Replace "Java" with "JavaScript":
+   let str = "I am learning Java";
+
+7. Given:
+   let str = "Selenium WebDriver with Java";
+   Extract "Selenium" using a string method.
+
+8. Extract "Java" from:
+   let str = "Selenium WebDriver with Java";
+
+9. Check whether the following string starts with "https":
+   let url = "https://www.google.com";
+
+10. Check whether the following string ends with ".com":
+    let email = "student@gmail.com";
+
+11. Convert the following string into an array of words:
+    let str = "JavaScript is powerful";
+
+12. Join the following array into a single string separated by spaces:
+    let arr = ["JavaScript", "is", "easy"];
+
+
+Level 3 – Logical String Problems
+
+13. Count the number of vowels in:
+    "JavaScript Automation Testing"
+
+14. Count the number of spaces in a string.
+
+15. Count how many times the character "a" occurs in:
+    "JavaScript is an amazing language"
+
+16. Reverse a string without using reverse().
+
+17. Check whether a string is a palindrome.
+    Example:
+    MADAM → Palindrome
+    HELLO → Not Palindrome
+
+18. Find the number of words in:
+    "I am learning JavaScript automation testing"
+
+19. Find the longest word in:
+    "JavaScript makes automation testing easier"
+
+20. Find the shortest word in a given sentence.
+
+
+Level 4 – Interview-Level Assignments
+
+21. Write a program to count the frequency of every character.
+    Input:
+    "javascript"
+
+22. Find the first non-repeated character.
+    Input:
+    "aabbcde"
+    Output:
+    c
+
+23. Find the first repeated character.
+    Input:
+    "javascript"
+
+24. Remove duplicate characters from a string.
+    Input:
+    "programming"
+    Output:
+    "progamin"
+
+25. Find the number of occurrences of a particular word in a sentence.
+
+26. Reverse the order of words without reversing the characters.
+    Input:
+    "JavaScript is easy"
+    Output:
+    "easy is JavaScript"
+
+27. Capitalize the first letter of every word.
+    Input:
+    "javascript automation testing"
+    Output:
+    "Javascript Automation Testing"
+
+28. Find the most frequently occurring character in a string.
+
+29. Check whether two strings are anagrams.
+    Example:
+    "listen"
+    "silent"
+    Output:
+    Anagram
+
+30. Remove all special characters from a string.
+    Input:
+    "JavaScript@123#Automation!"
+    Output:
+    "JavaScript123Automation"
+
+
+Challenge Assignments
+
+31. Find the second most frequently occurring character in a string.
+
+32. Find all duplicate characters in a string.
+
+33. Find all words that appear more than once in a sentence.
+
+34. Compress a string using character counts.
+    Input:
+    "aaabbcccc"
+    Output:
+    "a3b2c4"
+
+35. Find the longest substring without repeating characters.
+    Example:
+    "abcabcbb"
+    Output:
+    "abc"
+
+36. Check whether one string is a rotation of another.
+    Example:
+    "ABCD"
+    "CDAB"
+    Output:
+    "Rotation"
+
+37. Find the character with the highest ASCII value in a string.
+
+38. Find the number of uppercase letters, lowercase letters, digits, and special characters in a string.
+
+39. Validate whether a string is a valid email address using JavaScript.
+
+40. Real-world Selenium-style challenge:
+    Given:
+    let text = "Showing 1 to 10 of 125 entries";
+    Extract:
+    125
+    dynamically using JavaScript string methods.
+
+
+STUDENT GUIDELINES
+
+• Solve assignments 1–12 using built-in JavaScript string methods.
+• Solve assignments 13–30 using loops along with string methods where appropriate.
+• Try assignments 31–40 independently without looking at solutions.
+• Write clean, readable JavaScript code.
+• Test each program with at least two different inputs.
