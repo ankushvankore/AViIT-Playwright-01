@@ -49,3 +49,41 @@ test("Understanding Hard Assertion", async({page})=>{
 
     await page.waitForTimeout(2000);
 })
+
+test("Checkbox Assertion", async({page})=>{
+    await page.goto("https://testautomationpractice.blogspot.com/?m=1");
+
+    let sundayCB = page.locator("#sunday");
+    await sundayCB.click();
+
+    await expect(sundayCB).toBeChecked();
+
+    let wednesdayCB = page.locator("#wednesday");
+    await expect(wednesdayCB).not.toBeChecked();
+    //await expect(wednesdayCB).toBeChecked();
+
+    await page.waitForTimeout(2000);
+})
+
+test.only("Soft Assertion", async({page})=>{
+    await page.goto("https://testautomationpractice.blogspot.com/?m=1");
+
+    await expect.soft(page).toHaveURL("testautomationpractice.blogspot.com/?m=1");
+    console.log("Assertion done...");
+
+    let sundayCB = page.locator("#sunday");
+    await sundayCB.click();
+
+    await expect.soft(sundayCB).not.toBeChecked();
+
+    await expect(page).toHaveScreenshot();
+
+    /*
+    First time screenshot will be captured and it will be stored and that is the reason
+    test case will be fail. 
+    Second time when you will execute the same test case, this time Playwright will
+    capture the screenshot and it will be compared with earlier one
+    */
+
+    await page.waitForTimeout(2000);    
+})
