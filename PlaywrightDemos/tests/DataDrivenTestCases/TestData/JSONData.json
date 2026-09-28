@@ -1,0 +1,5 @@
+[
+    {"ID": "TC01", "userName": "standard_user", "password": "secret_sauce"},
+    {"ID": "TC02", "userName": "performance_glitch_user", "password": "secret_sauce"},
+    {"ID": "TC03", "userName": "visual_user", "password": "secret_sauce"}
+]
