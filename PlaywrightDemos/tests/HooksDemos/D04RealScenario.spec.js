@@ -9,8 +9,6 @@ test.describe.serial(("Real Scenario for serial"), async()=>{
         await page.getByPlaceholder("Password").fill("admin123");
 
         await page.locator(".oxd-button--medium").click();
-
-        await page.locator("//span[text()='Admin']").click();
     })
 
    test("Login test", async({page})=>{
