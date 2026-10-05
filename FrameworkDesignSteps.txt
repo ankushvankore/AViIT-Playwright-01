@@ -1,0 +1,9 @@
+1. Create a folder with name FrameworkDesign
+2. Open this folder inside VS Code
+3. Install playwright
+	npm init playwright@latest
+4. Install papa parse library for handling csv file
+	npm install papaparse
+5. Install xlsx library for handling Excel files
+	npm install xlsx
+6. 
