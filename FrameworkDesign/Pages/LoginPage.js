@@ -1,3 +1,5 @@
+import { InventoryPage } from "./InventoryPage";
+
 export class LoginPage{
     #page;
     #userName;
@@ -26,7 +28,7 @@ export class LoginPage{
         await this.#password.fill(ps);
         await this.#loginBtn.click();
 
-        //return new InventoryPage(this.#page);
+        return new InventoryPage(this.#page);
     }
 
     async getTitle(){
