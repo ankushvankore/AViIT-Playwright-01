@@ -1,3 +1,4 @@
+import { CheckoutPage } from "./CheckoutPage";
 import { InventoryPage } from "./InventoryPage";
 
 export class CartPage{
@@ -35,6 +36,6 @@ export class CartPage{
     async checkout(){
         this.#checkoutuButton.click();
 
-        //return new CheckoutPage(this.#page);
+        return new CheckoutPage(this.#page);
     }
 }

@@ -26,3 +26,5 @@ test("Login for blank credtionals", async({page})=>{
     await page.waitForTimeout(2000);
 })
 
+//HTML Report - https://github.com/nhiendohao/playwright-html
+

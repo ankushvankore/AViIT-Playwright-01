@@ -10,7 +10,9 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.63.0",
-    "@types/node": "^26.6.4"
+    "@types/node": "^26.6.4",
+    "allure-playwright": "^3.13.0",
+    "playwright-html-reporter": "^0.1.11"
   },
   "dependencies": {
     "papaparse": "^5.7.0",

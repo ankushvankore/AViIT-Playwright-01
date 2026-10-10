@@ -16,11 +16,11 @@ export class LoginPage{
     }
 
     async goToApplication(){
-        await this.#page.goto("https://www.saucedemo.com/");
+        await this.#page.goto("https://www.saucedemo.com/", {setTimeout:3000, waitUntil: 'load'});
     }
 
     async openApplication(url){
-        await this.#page.goto(url);
+        await this.#page.goto(url, {setTimeout:3000, waitUntil: 'load'});
     }
 
     async directLogin(un, ps){
