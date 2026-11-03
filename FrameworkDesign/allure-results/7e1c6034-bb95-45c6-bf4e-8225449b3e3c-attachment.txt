@@ -1,0 +1,4 @@
+Status         : passed
+Title          : Test case for test info object
+Duration       : 0
+Expected Status: passed

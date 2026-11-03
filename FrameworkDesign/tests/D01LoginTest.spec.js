@@ -2,7 +2,7 @@
 import { LoginPage } from "../Pages/LoginPage";
 import {test, expect} from "../Fixtures/BaseFixture.js";
  
-test("Login with valid credtionals", async({page})=>{
+test("Login with valid credtionals @smoke", async({page})=>{
     let loginPage = new LoginPage(page);
 
     await loginPage.goToApplication();
@@ -16,7 +16,7 @@ test("Login with valid credtionals", async({page})=>{
     await page.waitForTimeout(2000);
 })
 
-test("Login for blank credtionals", async({page})=>{
+test("Login for blank credtionals @smoke", async({page})=>{
     let loginPage = new LoginPage(page);
 
     await loginPage.openApplication("https://www.saucedemo.com/");
@@ -30,7 +30,7 @@ test("Login for blank credtionals", async({page})=>{
 //HTML Report - https://github.com/nhiendohao/playwright-html
 
 //Login using custom fixture
-test("Login test using Login fixture", async({page, loginFixture})=>{
+test("Login test using Login fixture @sanity", async({page, loginFixture})=>{
     console.log("Trying to login using fixture");
 
     await page.waitForTimeout(2000);    
@@ -43,7 +43,7 @@ You can add the shortcuts for your playwright test commands
 add following shortcuts (as per need) in package.json file
 
 "scripts": {
-    "test": "npx playwright test --headed",
+    "allTests": "npx playwright test --headed",
     "test:LoginPage" : "npx playwright test ./tests/D01LoginTest.spec.js --headed",
     "allure:generate" : "npx allure generate allure-results --clean -o allure-report",
     "allure:showReport" : "npx allure open allure-report"
@@ -56,3 +56,39 @@ npm run allure:generate
 npm run allure:showReport
 */
 
+test("Login using JSON file fixture @sanity @smoke", async({page, loginWithJSON})=>{
+    console.log("Login using JSON File");
+    
+    await page.waitForTimeout(2000);
+})
+
+test("Login using CSV file fixture @fixtureTest", async({page, loginWithCSV})=>{
+    console.log("Login using CSV file...");
+    
+    await page.waitForTimeout(2000);
+})
+
+/*
+Tags in Playwright
+It is like the tags in Cucumber
+Tags allows to execute or skip single or multiple tests
+You can apply multiple tags to every test
+Every tag starts with @
+Tags needs to be specified inside the title only
+for execution call npx playwright test .\\tests\\D01LoginTest.spec.js --headed --grep "@sanity"
+for multiple tests --grep "@smoke|@sanity"
+for skip the single test --grep-invert "@smoke"
+*/
+
+/*
+Multi environment tests
+You can execute your tests on multiple environments
+for this copy the entire code from playwright.config.js file
+create a new file like playwright.congig.dev.js
+paste the code and change the enveronment setup like browser etc
+
+while execution call the commamd as
+npx playwright test .\\tests\\D01LoginTest.spec.js --headed  --config=playwright.config.dev.js
+
+even you can add the shortcut for this inside package.json file
+*/

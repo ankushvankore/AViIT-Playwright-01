@@ -6,4 +6,4 @@
 	npm install papaparse
 5. Install xlsx library for handling Excel files
 	npm install xlsx
-6. 
+6. Create a standard folder structure to arrange all differnt files like test cases, classes, external utilities, fixtures etc
